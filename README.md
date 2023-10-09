@@ -10,7 +10,7 @@ PIONEER metastatic Hormone-Sensitive Prostate Cancer treatment characterization
 - Study lead forums tag: **[bdemeulder](https://forums.ohdsi.org/u/bdemeulder)**
 - Study start date: **October 31, 2022**
 - Study end date: **-**
-- Protocol: **-**
+- Protocol: **In press, submitted version is available in this repository**
 - Publications: **-**
 - Results explorer: **[Shiny App: Characterization study](https://pioneer-shiny.hzdr.de/app/PioneerMetastaticTreatmentExplorer/)**
 
