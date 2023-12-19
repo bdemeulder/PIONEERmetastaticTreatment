@@ -11,7 +11,7 @@
 							{
 								"Criteria" : {
 									"DrugExposure" : {
-										"CodesetId" : 12,
+										"CodesetId" : 21,
 										"DrugTypeExclude" : false
 									}
 								},
@@ -57,7 +57,7 @@
 							{
 								"Criteria" : {
 									"DrugExposure" : {
-										"CodesetId" : 12,
+										"CodesetId" : 21,
 										"DrugTypeExclude" : false
 									}
 								},
@@ -89,7 +89,7 @@
 					"OccurrenceStartDate" : {
 						"Value" : "2016-01-01",
 						"Op" : "bt",
-						"Extent" : "2020-12-31"
+						"Extent" : "2023-12-31"
 					},
 					"ProcedureTypeExclude" : false
 				}
@@ -157,7 +157,7 @@
 						"DemographicCriteriaList" : [],
 						"Groups" : []
 					},
-					"CodesetId" : 12,
+					"CodesetId" : 21,
 					"OccurrenceStartDate" : {
 						"Value" : "2016-01-01",
 						"Op" : "bt",
@@ -1015,82 +1015,6 @@
 							"DOMAIN_ID" : "Drug",
 							"VOCABULARY_ID" : "HemOnc",
 							"CONCEPT_CLASS_ID" : "Component Class"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					}
-				]
-			}
-		},
-		{
-			"id" : 12,
-			"name" : "[PIONEER V2.0] ARTA",
-			"expression" : {
-				"items" : [
-					{
-						"concept" : {
-							"CONCEPT_ID" : 40239056,
-							"CONCEPT_NAME" : "abiraterone",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "1100072",
-							"DOMAIN_ID" : "Drug",
-							"VOCABULARY_ID" : "RxNorm",
-							"CONCEPT_CLASS_ID" : "Ingredient"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 963987,
-							"CONCEPT_NAME" : "apalutamide",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "1999574",
-							"DOMAIN_ID" : "Drug",
-							"VOCABULARY_ID" : "RxNorm",
-							"CONCEPT_CLASS_ID" : "Ingredient"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 42900250,
-							"CONCEPT_NAME" : "enzalutamide",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "1307298",
-							"DOMAIN_ID" : "Drug",
-							"VOCABULARY_ID" : "RxNorm",
-							"CONCEPT_CLASS_ID" : "Ingredient"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 1361291,
-							"CONCEPT_NAME" : "darolutamide",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "2180325",
-							"DOMAIN_ID" : "Drug",
-							"VOCABULARY_ID" : "RxNorm",
-							"CONCEPT_CLASS_ID" : "Ingredient"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -3305,6 +3229,182 @@
 					}
 				]
 			}
+		},
+		{
+			"id" : 20,
+			"name" : "[PIONEER V2.0] abiraterone",
+			"expression" : {
+				"items" : [
+					{
+						"concept" : {
+							"CONCEPT_ID" : 40239056,
+							"CONCEPT_NAME" : "abiraterone",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "1100072",
+							"DOMAIN_ID" : "Drug",
+							"VOCABULARY_ID" : "RxNorm",
+							"CONCEPT_CLASS_ID" : "Ingredient"
+						},
+						"isExcluded" : false,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					}
+				]
+			}
+		},
+		{
+			"id" : 21,
+			"name" : "[PIONEER V2.0] ARTA",
+			"expression" : {
+				"items" : [
+					{
+						"concept" : {
+							"CONCEPT_ID" : 40239056,
+							"CONCEPT_NAME" : "abiraterone",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "1100072",
+							"DOMAIN_ID" : "Drug",
+							"VOCABULARY_ID" : "RxNorm",
+							"CONCEPT_CLASS_ID" : "Ingredient"
+						},
+						"isExcluded" : false,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 963987,
+							"CONCEPT_NAME" : "apalutamide",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "1999574",
+							"DOMAIN_ID" : "Drug",
+							"VOCABULARY_ID" : "RxNorm",
+							"CONCEPT_CLASS_ID" : "Ingredient"
+						},
+						"isExcluded" : false,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 42900250,
+							"CONCEPT_NAME" : "enzalutamide",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "1307298",
+							"DOMAIN_ID" : "Drug",
+							"VOCABULARY_ID" : "RxNorm",
+							"CONCEPT_CLASS_ID" : "Ingredient"
+						},
+						"isExcluded" : false,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 1361291,
+							"CONCEPT_NAME" : "darolutamide",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "2180325",
+							"DOMAIN_ID" : "Drug",
+							"VOCABULARY_ID" : "RxNorm",
+							"CONCEPT_CLASS_ID" : "Ingredient"
+						},
+						"isExcluded" : false,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					}
+				]
+			}
+		},
+		{
+			"id" : 22,
+			"name" : "[PIONEER V2.0] Enzalutamide",
+			"expression" : {
+				"items" : [
+					{
+						"concept" : {
+							"CONCEPT_ID" : 42900250,
+							"CONCEPT_NAME" : "enzalutamide",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "1307298",
+							"DOMAIN_ID" : "Drug",
+							"VOCABULARY_ID" : "RxNorm",
+							"CONCEPT_CLASS_ID" : "Ingredient"
+						},
+						"isExcluded" : false,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					}
+				]
+			}
+		},
+		{
+			"id" : 23,
+			"name" : "[PIONEER V2.0] apalutamide",
+			"expression" : {
+				"items" : [
+					{
+						"concept" : {
+							"CONCEPT_ID" : 963987,
+							"CONCEPT_NAME" : "apalutamide",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "1999574",
+							"DOMAIN_ID" : "Drug",
+							"VOCABULARY_ID" : "RxNorm",
+							"CONCEPT_CLASS_ID" : "Ingredient"
+						},
+						"isExcluded" : false,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					}
+				]
+			}
+		},
+		{
+			"id" : 24,
+			"name" : "[PIONEER V2.0] darolutamide",
+			"expression" : {
+				"items" : [
+					{
+						"concept" : {
+							"CONCEPT_ID" : 1361291,
+							"CONCEPT_NAME" : "darolutamide",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "2180325",
+							"DOMAIN_ID" : "Drug",
+							"VOCABULARY_ID" : "RxNorm",
+							"CONCEPT_CLASS_ID" : "Ingredient"
+						},
+						"isExcluded" : false,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					}
+				]
+			}
 		}
 	],
 	"QualifiedLimit" : {
@@ -3825,7 +3925,7 @@
 					{
 						"Criteria" : {
 							"DrugExposure" : {
-								"CodesetId" : 12,
+								"CodesetId" : 21,
 								"DrugTypeExclude" : false
 							}
 						},
@@ -3932,11 +4032,48 @@
 			}
 		}
 	],
+	"EndStrategy" : {
+		"CustomEra" : {
+			"DrugCodesetId" : 21,
+			"GapDays" : 30,
+			"Offset" : 0
+		}
+	},
 	"CensoringCriteria" : [
 		{
 			"ConditionOccurrence" : {
 				"CodesetId" : 10,
 				"ConditionTypeExclude" : false
+			}
+		},
+		{
+			"DrugExposure" : {
+				"CodesetId" : 13,
+				"DrugTypeExclude" : false
+			}
+		},
+		{
+			"DrugExposure" : {
+				"CodesetId" : 14,
+				"DrugTypeExclude" : false
+			}
+		},
+		{
+			"DrugExposure" : {
+				"CodesetId" : 15,
+				"DrugTypeExclude" : false
+			}
+		},
+		{
+			"DrugExposure" : {
+				"CodesetId" : 16,
+				"DrugTypeExclude" : false
+			}
+		},
+		{
+			"DrugExposure" : {
+				"CodesetId" : 17,
+				"DrugTypeExclude" : false
 			}
 		}
 	],
