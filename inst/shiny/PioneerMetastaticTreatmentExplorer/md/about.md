@@ -11,8 +11,5 @@ Observational health data analysis to identify amongst patients with metastatic 
 
 
 **Resources:**<br>
-- The study protocol is available <a href="https://protocolexchange.researchsquare.com/article/pex-1468/v1">here</a>
-- All analytic code is available at <a href="https://github.com/ohdsi-studies/PioneerWatchfulWaiting" target="_blank">GitHub</a>
-
-**Cohort Diagnostics:**<br>
-- <a href="https://data.ohdsi.org/PioneerWatchfulWaitingDiag/">Diagnostics explorer</a>
+- The study protocol is available <a href="https://pubmed.ncbi.nlm.nih.gov/38046899/">here</a>
+- All analytic code is available at <a href="https://github.com/bdemeulder/PIONEERmetastaticTreatment" target="_blank">GitHub</a>
