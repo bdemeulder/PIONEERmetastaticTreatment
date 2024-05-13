@@ -4409,6 +4409,32 @@
 					},
 					{
 						"Criteria" : {
+							"ProcedureOccurrence" : {
+								"CodesetId" : 20,
+								"ProcedureTypeExclude" : false
+							}
+						},
+						"StartWindow" : {
+							"Start" : {
+								"Coeff" : -1
+							},
+							"End" : {
+								"Days" : 1,
+								"Coeff" : -1
+							},
+							"UseIndexEnd" : false,
+							"UseEventEnd" : false
+						},
+						"RestrictVisit" : false,
+						"IgnoreObservationPeriod" : true,
+						"Occurrence" : {
+							"Type" : 0,
+							"Count" : 0,
+							"IsDistinct" : false
+						}
+					},
+					{
+						"Criteria" : {
 							"DrugExposure" : {
 								"CodesetId" : 11,
 								"DrugTypeExclude" : false

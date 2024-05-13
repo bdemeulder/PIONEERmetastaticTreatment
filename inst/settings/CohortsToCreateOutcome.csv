@@ -1,5 +1,5 @@
 name,atlasName,atlasId,cohortId
-201,[PIONEER 2.0] Symptomatic progression-FINAL,453,201
+201,[PIONEER FUP] Skeletal symptoms,361,201
 202,[PIONEER 2.0] Death FINAL,362,202
 203,[PIONEER 2.0] Fatigue or malaise FINAL,310,203
 204,[PIONEER 2.0] Diarrhea FINAL,318,204
@@ -24,4 +24,3 @@ name,atlasName,atlasId,cohortId
 223,[PIONEER 2.0] TUR FINAL,332,223
 224,[PIONEER 2.0] Hospitalization FINAL,324,224
 225,[PIONEER 2.0] ER Visit FINAL,327,225
-226,[PIONEER FUP] Skeletal symptoms,361,226

@@ -1451,7 +1451,31 @@ HAVING COUNT(cc.event_id) = 0
 
 UNION ALL
 -- Begin Correlated Criteria
-select 2 as index_id, p.person_id, p.event_id
+select 2 as index_id, cc.person_id, cc.event_id
+from (SELECT p.person_id, p.event_id 
+FROM #qualified_events P
+JOIN (
+  -- Begin Procedure Occurrence Criteria
+select C.person_id, C.procedure_occurrence_id as event_id, C.procedure_date as start_date, DATEADD(d,1,C.procedure_date) as END_DATE,
+       C.visit_occurrence_id, C.procedure_date as sort_date
+from 
+(
+  select po.* 
+  FROM @cdm_database_schema.PROCEDURE_OCCURRENCE po
+JOIN #Codesets cs on (po.procedure_concept_id = cs.concept_id and cs.codeset_id = 20)
+) C
+
+
+-- End Procedure Occurrence Criteria
+
+) A on A.person_id = P.person_id  AND A.START_DATE <= DATEADD(day,-1,P.START_DATE) ) cc 
+GROUP BY cc.person_id, cc.event_id
+HAVING COUNT(cc.event_id) >= 1
+-- End Correlated Criteria
+
+UNION ALL
+-- Begin Correlated Criteria
+select 3 as index_id, p.person_id, p.event_id
 from #qualified_events p
 LEFT JOIN (
 SELECT p.person_id, p.event_id 
@@ -1478,7 +1502,7 @@ HAVING COUNT(cc.event_id) = 0
 
 UNION ALL
 -- Begin Correlated Criteria
-select 3 as index_id, p.person_id, p.event_id
+select 4 as index_id, p.person_id, p.event_id
 from #qualified_events p
 LEFT JOIN (
 SELECT p.person_id, p.event_id 
@@ -1504,7 +1528,7 @@ HAVING COUNT(cc.event_id) = 0
 
   ) CQ on E.person_id = CQ.person_id and E.event_id = CQ.event_id
   GROUP BY E.person_id, E.event_id
-  HAVING COUNT(index_id) = 4
+  HAVING COUNT(index_id) = 5
 ) G
 -- End Criteria Group
 ) AC on AC.person_id = pe.person_id AND AC.event_id = pe.event_id

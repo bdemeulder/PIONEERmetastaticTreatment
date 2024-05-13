@@ -4,34 +4,9 @@
 		"CriteriaList" : [
 			{
 				"ConditionOccurrence" : {
-					"CodesetId" : 0,
+					"CodesetId" : 17,
+					"First" : true,
 					"ConditionTypeExclude" : false
-				}
-			},
-			{
-				"Measurement" : {
-					"CodesetId" : 1,
-					"MeasurementTypeExclude" : false
-				}
-			},
-			{
-				"Measurement" : {
-					"CodesetId" : 2,
-					"MeasurementTypeExclude" : false,
-					"ValueAsNumber" : {
-						"Value" : 0,
-						"Op" : "gt"
-					}
-				}
-			},
-			{
-				"Measurement" : {
-					"CodesetId" : 3,
-					"MeasurementTypeExclude" : false,
-					"ValueAsNumber" : {
-						"Value" : 0,
-						"Op" : "gt"
-					}
 				}
 			}
 		],
@@ -45,155 +20,19 @@
 	},
 	"ConceptSets" : [
 		{
-			"id" : 0,
-			"name" : "[PIONEER V2.0] Gleason all (condition)",
+			"id" : 17,
+			"name" : "[PIONEER 2.0] prostate cancer",
 			"expression" : {
 				"items" : [
 					{
 						"concept" : {
-							"CONCEPT_ID" : 3655244,
-							"CONCEPT_NAME" : "Gleason grade group 1",
+							"CONCEPT_ID" : 4163261,
+							"CONCEPT_NAME" : "Malignant tumor of prostate",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "860742008",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4086970,
-							"CONCEPT_NAME" : "Gleason grade score 4 out of 10",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "18430005",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4172456,
-							"CONCEPT_NAME" : "Gleason grade score 2 out of 10",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "49878003",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4224785,
-							"CONCEPT_NAME" : "Gleason grade score 6 out of 10",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "84556003",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4240063,
-							"CONCEPT_NAME" : "Gleason Score 2-4: Well differentiated",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "369775001",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4240064,
-							"CONCEPT_NAME" : "Gleason Score 5-6: Moderately differentiated",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "369776000",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4250166,
-							"CONCEPT_NAME" : "Gleason grade score 5 out of 10",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "74013009",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4263220,
-							"CONCEPT_NAME" : "Gleason grade score 3 out of 10",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "46677009",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4204361,
-							"CONCEPT_NAME" : "G1 grade",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "54102005",
+							"CONCEPT_CODE" : "399068003",
 							"DOMAIN_ID" : "Condition",
 							"VOCABULARY_ID" : "SNOMED",
 							"CONCEPT_CLASS_ID" : "Clinical Finding"
@@ -204,412 +43,55 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 3655245,
-							"CONCEPT_NAME" : "Gleason grade group 2",
+							"CONCEPT_ID" : 4314337,
+							"CONCEPT_NAME" : "Secondary malignant neoplasm of prostate",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "860743003",
+							"CONCEPT_CODE" : "94503003",
 							"DOMAIN_ID" : "Condition",
 							"VOCABULARY_ID" : "SNOMED",
 							"CONCEPT_CLASS_ID" : "Clinical Finding"
 						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
+						"isExcluded" : true,
+						"includeDescendants" : true,
 						"includeMapped" : false
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 3655246,
-							"CONCEPT_NAME" : "Gleason grade group 3",
+							"CONCEPT_ID" : 37208188,
+							"CONCEPT_NAME" : "Non-metastatic prostate cancer",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "860744009",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4211973,
-							"CONCEPT_NAME" : "Gleason grade score 7 out of 10",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "57403001",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4041008,
-							"CONCEPT_NAME" : "G2 grade",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "1663004",
+							"CONCEPT_CODE" : "461511000124101",
 							"DOMAIN_ID" : "Condition",
 							"VOCABULARY_ID" : "SNOMED",
 							"CONCEPT_CLASS_ID" : "Clinical Finding"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4264742,
-							"CONCEPT_NAME" : "G3 grade",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "61026006",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 3655247,
-							"CONCEPT_NAME" : "Gleason grade group 4",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "860745005",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4140825,
-							"CONCEPT_NAME" : "Gleason grade score 8 out of 10",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "33013007",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4120176,
-							"CONCEPT_NAME" : "G4 grade",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "258245003",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 3655248,
-							"CONCEPT_NAME" : "Gleason grade group 5",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "860746006",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4074238,
-							"CONCEPT_NAME" : "Gleason grade score 10 out of 10",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "24514009",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4240465,
-							"CONCEPT_NAME" : "Gleason grade score 9 out of 10",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "58925000",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
 						"includeMapped" : false
 					}
 				]
 			}
 		},
 		{
-			"id" : 1,
-			"name" : "[PIONEER 2.0] Gleason all (measurement)",
+			"id" : 18,
+			"name" : "[PIONEER 2.0] PSA measurement",
 			"expression" : {
 				"items" : [
 					{
 						"concept" : {
-							"CONCEPT_ID" : 36770582,
-							"CONCEPT_NAME" : "Gleason Grade group 1 (Gleason Score 3 + 3 = 6)",
+							"CONCEPT_ID" : 35918474,
+							"CONCEPT_NAME" : "PSA (Prostatic Specific Antigen) Lab Value",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP5000262",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36769947,
-							"CONCEPT_NAME" : "Gleason Grade group 2 (Gleason Score 3 + 4 = 7)",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999624",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36769585,
-							"CONCEPT_NAME" : "Gleason Grade group 3 (Gleason Score 4 + 3 = 7)",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999262",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36769497,
-							"CONCEPT_NAME" : "Gleason Grade group 4 (Gleason Score 3 + 5 = 8)",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999174",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36769010,
-							"CONCEPT_NAME" : "Gleason Grade group 4 (Gleason Score 4 + 4 = 8)",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4998687",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36769177,
-							"CONCEPT_NAME" : "Gleason Grade group 4 (Gleason Score 5 + 3 = 8)",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4998853",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36769362,
-							"CONCEPT_NAME" : "Gleason Grade group 5 (Gleason Score 4 + 5 = 9)",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999038",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36768283,
-							"CONCEPT_NAME" : "Gleason Grade group 5 (Gleason Score 5 + 4 = 9)",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4997958",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36769450,
-							"CONCEPT_NAME" : "Gleason Grade group 5 (Gleason Score 5 + 5 = 10)",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999126",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 1633844,
-							"CONCEPT_NAME" : "Gleason Score 7",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "Gleason-Score-7",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 1635475,
-							"CONCEPT_NAME" : "Gleason Score 8",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "Gleason-Score-8",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 1633687,
-							"CONCEPT_NAME" : "Gleason Score 9",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "Gleason-Score-9",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 35918508,
-							"CONCEPT_NAME" : "Gleason Score Clinical",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "3840",
+							"CONCEPT_CODE" : "3920",
 							"DOMAIN_ID" : "Measurement",
 							"VOCABULARY_ID" : "NAACCR",
 							"CONCEPT_CLASS_ID" : "NAACCR Variable"
@@ -620,16 +102,16 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 36768146,
-							"CONCEPT_NAME" : "Gleason Score Clinical 0",
+							"CONCEPT_ID" : 37398806,
+							"CONCEPT_NAME" : "PSA (prostate-specific antigen) level",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4997821",
+							"CONCEPT_CODE" : "1030791000000100",
 							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
+							"VOCABULARY_ID" : "SNOMED",
+							"CONCEPT_CLASS_ID" : "Observable Entity"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -637,16 +119,16 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 36768412,
-							"CONCEPT_NAME" : "Gleason Score Clinical 2",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"CONCEPT_ID" : 37065295,
+							"CONCEPT_NAME" : "Prostate specific Ag panel | Serum or Plasma | Chemistry Panels",
+							"STANDARD_CONCEPT" : "C",
+							"STANDARD_CONCEPT_CAPTION" : "Classification",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4998088",
+							"CONCEPT_CODE" : "LP387023-7",
 							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "LOINC Hierarchy"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -654,16 +136,16 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 36770289,
-							"CONCEPT_NAME" : "Gleason Score Clinical 3",
+							"CONCEPT_ID" : 2617206,
+							"CONCEPT_NAME" : "Prostate cancer screening; prostate specific antigen test (psa)",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999968",
+							"CONCEPT_CODE" : "G0103",
 							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
+							"VOCABULARY_ID" : "HCPCS",
+							"CONCEPT_CLASS_ID" : "HCPCS"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -671,115 +153,13 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 36769063,
-							"CONCEPT_NAME" : "Gleason Score Clinical 4",
+							"CONCEPT_ID" : 35917936,
+							"CONCEPT_NAME" : "Prostatic Specific Antigen (PSA) Interpretation",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4998740",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36769698,
-							"CONCEPT_NAME" : "Gleason Score Clinical 5",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999376",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36768420,
-							"CONCEPT_NAME" : "Gleason Score Clinical 6",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4998096",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36769850,
-							"CONCEPT_NAME" : "Gleason Score Clinical 7",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999528",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36770045,
-							"CONCEPT_NAME" : "Gleason Score Clinical 8",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999723",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36768673,
-							"CONCEPT_NAME" : "Gleason Score Clinical 9",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4998349",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 35918515,
-							"CONCEPT_NAME" : "Gleason Score Pathological",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "3841",
+							"CONCEPT_CODE" : "prostate@2890",
 							"DOMAIN_ID" : "Measurement",
 							"VOCABULARY_ID" : "NAACCR",
 							"CONCEPT_CLASS_ID" : "NAACCR Variable"
@@ -790,16 +170,16 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 36768569,
-							"CONCEPT_NAME" : "Gleason Score Pathological 0",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"CONCEPT_ID" : 45889041,
+							"CONCEPT_NAME" : "Prostate specific antigen (PSA)",
+							"STANDARD_CONCEPT" : "C",
+							"STANDARD_CONCEPT_CAPTION" : "Classification",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4998245",
+							"CONCEPT_CODE" : "1011648",
 							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
+							"VOCABULARY_ID" : "CPT4",
+							"CONCEPT_CLASS_ID" : "CPT4 Hierarchy"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -807,439 +187,424 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 36770649,
-							"CONCEPT_NAME" : "Gleason Score Pathological 2",
+							"CONCEPT_ID" : 4272032,
+							"CONCEPT_NAME" : "Prostate specific antigen measurement",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP5000329",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36769547,
-							"CONCEPT_NAME" : "Gleason Score Pathological 3",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999224",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36770573,
-							"CONCEPT_NAME" : "Gleason Score Pathological 4",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP5000253",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36768172,
-							"CONCEPT_NAME" : "Gleason Score Pathological 5",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4997847",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36769895,
-							"CONCEPT_NAME" : "Gleason Score Pathological 6",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999573",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36770507,
-							"CONCEPT_NAME" : "Gleason Score Pathological 7",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP5000187",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36768867,
-							"CONCEPT_NAME" : "Gleason Score Pathological 8",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4998543",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36768805,
-							"CONCEPT_NAME" : "Gleason Score Pathological 9",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4998481",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 1634989,
-							"CONCEPT_NAME" : "Clinical Gleason Score <=6",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "c-Gleason-Score-<=6",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					}
-				]
-			}
-		},
-		{
-			"id" : 2,
-			"name" : "[PIONEER V2.0] Gleason GRADE need value",
-			"expression" : {
-				"items" : [
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4025371,
-							"CONCEPT_NAME" : "Gleason grading system for prostatic cancer",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "106241006",
+							"CONCEPT_CODE" : "63476009",
 							"DOMAIN_ID" : "Measurement",
 							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Staging / Scales"
+							"CONCEPT_CLASS_ID" : "Procedure"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
 						"includeMapped" : false
-					}
-				]
-			}
-		},
-		{
-			"id" : 3,
-			"name" : "[PIONEER 2.0] Gleason SCORE need value",
-			"expression" : {
-				"items" : [
+					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 3032943,
-							"CONCEPT_NAME" : "Gleason score in Specimen Qualitative",
+							"CONCEPT_ID" : 35917418,
+							"CONCEPT_NAME" : "Prostatic Specific Antigen (PSA) Lab Value",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "35266-6",
+							"CONCEPT_CODE" : "prostate@2880",
+							"DOMAIN_ID" : "Measurement",
+							"VOCABULARY_ID" : "NAACCR",
+							"CONCEPT_CLASS_ID" : "NAACCR Variable"
+						},
+						"isExcluded" : false,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 3037774,
+							"CONCEPT_NAME" : "Prostate specific Ag [Units/volume] in Semen",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "19198-1",
 							"DOMAIN_ID" : "Measurement",
 							"VOCABULARY_ID" : "LOINC",
 							"CONCEPT_CLASS_ID" : "Lab Test"
 						},
-						"isExcluded" : false,
+						"isExcluded" : true,
 						"includeDescendants" : true,
 						"includeMapped" : false
-					}
-				]
-			}
-		},
-		{
-			"id" : 4,
-			"name" : "[PIONEER V2.0] Gleason Grade 1 (condition)",
-			"expression" : {
-				"items" : [
+					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 3655244,
-							"CONCEPT_NAME" : "Gleason grade group 1",
+							"CONCEPT_ID" : 40762314,
+							"CONCEPT_NAME" : "Prostate specific Ag [Mass/volume] in Peritoneal fluid",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "860742008",
-							"DOMAIN_ID" : "Condition",
+							"CONCEPT_CODE" : "59223-8",
+							"DOMAIN_ID" : "Measurement",
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "Lab Test"
+						},
+						"isExcluded" : true,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 3038011,
+							"CONCEPT_NAME" : "Prostate specific Ag [Mass/volume] in Semen",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "19199-9",
+							"DOMAIN_ID" : "Measurement",
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "Lab Test"
+						},
+						"isExcluded" : true,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 40762321,
+							"CONCEPT_NAME" : "Prostate specific Ag [Mass/volume] in Cerebral spinal fluid",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "59230-3",
+							"DOMAIN_ID" : "Measurement",
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "Lab Test"
+						},
+						"isExcluded" : true,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 40762312,
+							"CONCEPT_NAME" : "Prostate specific Ag [Mass/volume] in Pleural fluid",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "59221-2",
+							"DOMAIN_ID" : "Measurement",
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "Lab Test"
+						},
+						"isExcluded" : true,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 3032915,
+							"CONCEPT_NAME" : "Prostate specific Ag [Mass/volume] in Urine",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "34611-4",
+							"DOMAIN_ID" : "Measurement",
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "Lab Test"
+						},
+						"isExcluded" : true,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 3002178,
+							"CONCEPT_NAME" : "Prostate specific Ag [Moles/volume] in Semen",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "19200-5",
+							"DOMAIN_ID" : "Measurement",
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "Lab Test"
+						},
+						"isExcluded" : true,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 3007273,
+							"CONCEPT_NAME" : "Prostate specific Ag [Presence] in Tissue by Immune stain",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "10508-0",
+							"DOMAIN_ID" : "Measurement",
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "Lab Test"
+						},
+						"isExcluded" : true,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 37394310,
+							"CONCEPT_NAME" : "Free PSA (prostate specific antigen) level",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "1030021000000101",
+							"DOMAIN_ID" : "Measurement",
 							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
+							"CONCEPT_CLASS_ID" : "Observable Entity"
 						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
+						"isExcluded" : true,
+						"includeDescendants" : true,
 						"includeMapped" : false
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 4086970,
-							"CONCEPT_NAME" : "Gleason grade score 4 out of 10",
+							"CONCEPT_ID" : 4194418,
+							"CONCEPT_NAME" : "Free prostate specific antigen level",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "18430005",
-							"DOMAIN_ID" : "Condition",
+							"CONCEPT_CODE" : "395145001",
+							"DOMAIN_ID" : "Measurement",
 							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
+							"CONCEPT_CLASS_ID" : "Procedure"
 						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
+						"isExcluded" : true,
+						"includeDescendants" : true,
 						"includeMapped" : false
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 4172456,
-							"CONCEPT_NAME" : "Gleason grade score 2 out of 10",
+							"CONCEPT_ID" : 37394311,
+							"CONCEPT_NAME" : "Free:total PSA (prostate specific antigen) ratio",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "49878003",
-							"DOMAIN_ID" : "Condition",
+							"CONCEPT_CODE" : "1030031000000104",
+							"DOMAIN_ID" : "Measurement",
 							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
+							"CONCEPT_CLASS_ID" : "Observable Entity"
 						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
+						"isExcluded" : true,
+						"includeDescendants" : true,
 						"includeMapped" : false
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 4224785,
-							"CONCEPT_NAME" : "Gleason grade score 6 out of 10",
+							"CONCEPT_ID" : 4215704,
+							"CONCEPT_NAME" : "Free:total prostate specific antigen ratio",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "84556003",
-							"DOMAIN_ID" : "Condition",
+							"CONCEPT_CODE" : "395146000",
+							"DOMAIN_ID" : "Measurement",
 							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
+							"CONCEPT_CLASS_ID" : "Procedure"
 						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
+						"isExcluded" : true,
+						"includeDescendants" : true,
 						"includeMapped" : false
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 4240063,
-							"CONCEPT_NAME" : "Gleason Score 2-4: Well differentiated",
+							"CONCEPT_ID" : 3005013,
+							"CONCEPT_NAME" : "Prostate Specific Ag Free [Mass/volume] in Serum or Plasma",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "369775001",
-							"DOMAIN_ID" : "Condition",
+							"CONCEPT_CODE" : "10886-0",
+							"DOMAIN_ID" : "Measurement",
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "Lab Test"
+						},
+						"isExcluded" : true,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 3001784,
+							"CONCEPT_NAME" : "Prostate Specific Ag Free/Prostate specific Ag.total in Serum or Plasma",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "12841-3",
+							"DOMAIN_ID" : "Measurement",
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "Lab Test"
+						},
+						"isExcluded" : true,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 2212543,
+							"CONCEPT_NAME" : "Prostate specific antigen (PSA); free",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "84154",
+							"DOMAIN_ID" : "Measurement",
+							"VOCABULARY_ID" : "CPT4",
+							"CONCEPT_CLASS_ID" : "CPT4"
+						},
+						"isExcluded" : true,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 37392159,
+							"CONCEPT_NAME" : "Serum free PSA (prostate specific antigen) level",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "1000481000000100",
+							"DOMAIN_ID" : "Measurement",
 							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
+							"CONCEPT_CLASS_ID" : "Observable Entity"
 						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
+						"isExcluded" : true,
+						"includeDescendants" : true,
 						"includeMapped" : false
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 4240064,
-							"CONCEPT_NAME" : "Gleason Score 5-6: Moderately differentiated",
+							"CONCEPT_ID" : 44811981,
+							"CONCEPT_NAME" : "Serum free PSA (prostate specific antigen) measurement",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "369776000",
-							"DOMAIN_ID" : "Condition",
+							"CONCEPT_CODE" : "909341000000103",
+							"DOMAIN_ID" : "Measurement",
 							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
+							"CONCEPT_CLASS_ID" : "Procedure"
 						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
+						"isExcluded" : true,
+						"includeDescendants" : true,
 						"includeMapped" : false
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 4250166,
-							"CONCEPT_NAME" : "Gleason grade score 5 out of 10",
+							"CONCEPT_ID" : 37398474,
+							"CONCEPT_NAME" : "Serum free:total PSA (prostate specific antigen) ratio",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "74013009",
-							"DOMAIN_ID" : "Condition",
+							"CONCEPT_CODE" : "1000491000000103",
+							"DOMAIN_ID" : "Measurement",
 							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
+							"CONCEPT_CLASS_ID" : "Observable Entity"
 						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
+						"isExcluded" : true,
+						"includeDescendants" : true,
 						"includeMapped" : false
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 4263220,
-							"CONCEPT_NAME" : "Gleason grade score 3 out of 10",
+							"CONCEPT_ID" : 44811982,
+							"CONCEPT_NAME" : "Serum free:total prostate specific antigen ratio measurement",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "46677009",
-							"DOMAIN_ID" : "Condition",
+							"CONCEPT_CODE" : "909361000000102",
+							"DOMAIN_ID" : "Measurement",
 							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
+							"CONCEPT_CLASS_ID" : "Procedure"
 						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
+						"isExcluded" : true,
+						"includeDescendants" : true,
 						"includeMapped" : false
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 4204361,
-							"CONCEPT_NAME" : "G1 grade",
+							"CONCEPT_ID" : 42529562,
+							"CONCEPT_NAME" : "Prostate Specific Ag Free [Mass/volume] in Serum or Plasma by Immunoassay",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "54102005",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					}
-				]
-			}
-		},
-		{
-			"id" : 5,
-			"name" : "[PIONEER 2.0] Gleason Grade1 (measurement)",
-			"expression" : {
-				"items" : [
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36770582,
-							"CONCEPT_NAME" : "Gleason Grade group 1 (Gleason Score 3 + 3 = 6)",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP5000262",
+							"CONCEPT_CODE" : "83113-1",
 							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "Lab Test"
 						},
-						"isExcluded" : false,
+						"isExcluded" : true,
 						"includeDescendants" : true,
 						"includeMapped" : false
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 36768146,
-							"CONCEPT_NAME" : "Gleason Score Clinical 0",
+							"CONCEPT_ID" : 3036349,
+							"CONCEPT_NAME" : "Prostate Specific Ag Free [Moles/volume] in Serum or Plasma",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4997821",
+							"CONCEPT_CODE" : "19203-9",
 							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "Lab Test"
 						},
-						"isExcluded" : false,
+						"isExcluded" : true,
 						"includeDescendants" : true,
 						"includeMapped" : false
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 36768412,
-							"CONCEPT_NAME" : "Gleason Score Clinical 2",
+							"CONCEPT_ID" : 3001138,
+							"CONCEPT_NAME" : "Prostate Specific Ag Free [Units/volume] in Serum or Plasma",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4998088",
+							"CONCEPT_CODE" : "19201-3",
 							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "Lab Test"
 						},
-						"isExcluded" : false,
+						"isExcluded" : true,
 						"includeDescendants" : true,
 						"includeMapped" : false
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 36770289,
-							"CONCEPT_NAME" : "Gleason Score Clinical 3",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"CONCEPT_ID" : 37047960,
+							"CONCEPT_NAME" : "Prostate specific Ag | Body fluid | Chemistry - non-challenge",
+							"STANDARD_CONCEPT" : "C",
+							"STANDARD_CONCEPT_CAPTION" : "Classification",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999968",
+							"CONCEPT_CODE" : "LP386133-5",
 							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "LOINC Hierarchy"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -1247,16 +612,16 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 36769063,
-							"CONCEPT_NAME" : "Gleason Score Clinical 4",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"CONCEPT_ID" : 40653611,
+							"CONCEPT_NAME" : "Prostate specific Ag|MCnc|Pt|ANYBldSerPl",
+							"STANDARD_CONCEPT" : "C",
+							"STANDARD_CONCEPT_CAPTION" : "Classification",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4998740",
+							"CONCEPT_CODE" : "LG11034-2",
 							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "LOINC Group"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -1264,16 +629,16 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 36769698,
-							"CONCEPT_NAME" : "Gleason Score Clinical 5",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"CONCEPT_ID" : 37067221,
+							"CONCEPT_NAME" : "Prostate specific Ag | Serum or Plasma | Chemistry - non-challenge",
+							"STANDARD_CONCEPT" : "C",
+							"STANDARD_CONCEPT_CAPTION" : "Classification",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999376",
+							"CONCEPT_CODE" : "LP386138-4",
 							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "LOINC Hierarchy"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -1281,321 +646,16 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 36768420,
-							"CONCEPT_NAME" : "Gleason Score Clinical 6",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"CONCEPT_ID" : 40655371,
+							"CONCEPT_NAME" : "Prostate specific Ag|Pt|Ser/Plas",
+							"STANDARD_CONCEPT" : "C",
+							"STANDARD_CONCEPT_CAPTION" : "Classification",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4998096",
+							"CONCEPT_CODE" : "LG47752-7",
 							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36768569,
-							"CONCEPT_NAME" : "Gleason Score Pathological 0",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4998245",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36770649,
-							"CONCEPT_NAME" : "Gleason Score Pathological 2",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP5000329",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36769547,
-							"CONCEPT_NAME" : "Gleason Score Pathological 3",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999224",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36770573,
-							"CONCEPT_NAME" : "Gleason Score Pathological 4",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP5000253",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36768172,
-							"CONCEPT_NAME" : "Gleason Score Pathological 5",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4997847",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36769895,
-							"CONCEPT_NAME" : "Gleason Score Pathological 6",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999573",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 1634989,
-							"CONCEPT_NAME" : "Clinical Gleason Score <=6",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "c-Gleason-Score-<=6",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					}
-				]
-			}
-		},
-		{
-			"id" : 6,
-			"name" : "[PIONEER V2.0] Grade Gleason 2-3 (condition)",
-			"expression" : {
-				"items" : [
-					{
-						"concept" : {
-							"CONCEPT_ID" : 3655245,
-							"CONCEPT_NAME" : "Gleason grade group 2",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "860743003",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 3655246,
-							"CONCEPT_NAME" : "Gleason grade group 3",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "860744009",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4211973,
-							"CONCEPT_NAME" : "Gleason grade score 7 out of 10",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "57403001",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : false,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4041008,
-							"CONCEPT_NAME" : "G2 grade",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "1663004",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4264742,
-							"CONCEPT_NAME" : "G3 grade",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "61026006",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					}
-				]
-			}
-		},
-		{
-			"id" : 7,
-			"name" : "[PIONEER 2.0] Gleason Grade 2 or 3 (measurement)",
-			"expression" : {
-				"items" : [
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36769947,
-							"CONCEPT_NAME" : "Gleason Grade group 2 (Gleason Score 3 + 4 = 7)",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999624",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36769585,
-							"CONCEPT_NAME" : "Gleason Grade group 3 (Gleason Score 4 + 3 = 7)",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999262",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 1633844,
-							"CONCEPT_NAME" : "Gleason Score 7",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "Gleason-Score-7",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36769850,
-							"CONCEPT_NAME" : "Gleason Score Clinical 7",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP4999528",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 36770507,
-							"CONCEPT_NAME" : "Gleason Score Pathological 7",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "OMOP5000187",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "Cancer Modifier",
-							"CONCEPT_CLASS_ID" : "Staging/Grading"
+							"VOCABULARY_ID" : "LOINC",
+							"CONCEPT_CLASS_ID" : "LOINC Group"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -1609,110 +669,46 @@
 		"Type" : "First"
 	},
 	"ExpressionLimit" : {
-		"Type" : "First"
+		"Type" : "Last"
 	},
 	"InclusionRules" : [
 		{
-			"name" : "Grade 2 - 3",
+			"name" : "PSA<10",
 			"expression" : {
-				"Type" : "ALL",
+				"Type" : "ANY",
 				"CriteriaList" : [
 					{
 						"Criteria" : {
-							"ConditionOccurrence" : {
-								"CodesetId" : 6,
-								"ConditionTypeExclude" : false
-							}
-						},
-						"StartWindow" : {
-							"Start" : {
-								"Coeff" : -1
-							},
-							"End" : {
-								"Coeff" : 1
-							},
-							"UseIndexEnd" : false,
-							"UseEventEnd" : false
-						},
-						"RestrictVisit" : false,
-						"IgnoreObservationPeriod" : false,
-						"Occurrence" : {
-							"Type" : 2,
-							"Count" : 1,
-							"IsDistinct" : false
-						}
-					},
-					{
-						"Criteria" : {
 							"Measurement" : {
-								"CodesetId" : 7,
-								"MeasurementTypeExclude" : false
-							}
-						},
-						"StartWindow" : {
-							"Start" : {
-								"Coeff" : -1
-							},
-							"End" : {
-								"Coeff" : 1
-							},
-							"UseIndexEnd" : false,
-							"UseEventEnd" : false
-						},
-						"RestrictVisit" : false,
-						"IgnoreObservationPeriod" : false,
-						"Occurrence" : {
-							"Type" : 2,
-							"Count" : 1,
-							"IsDistinct" : false
-						}
-					},
-					{
-						"Criteria" : {
-							"Measurement" : {
-								"CodesetId" : 2,
+								"CodesetId" : 18,
 								"MeasurementTypeExclude" : false,
 								"ValueAsNumber" : {
-									"Value" : 2,
-									"Op" : "bt",
-									"Extent" : 3
-								}
+									"Value" : 10,
+									"Op" : "lt"
+								},
+								"Unit" : [
+									{
+										"CONCEPT_ID" : 8842,
+										"CONCEPT_NAME" : "nanogram per milliliter",
+										"STANDARD_CONCEPT" : null,
+										"STANDARD_CONCEPT_CAPTION" : "Unknown",
+										"INVALID_REASON" : null,
+										"INVALID_REASON_CAPTION" : "Unknown",
+										"CONCEPT_CODE" : "ng/mL",
+										"DOMAIN_ID" : "Unit",
+										"VOCABULARY_ID" : "UCUM",
+										"CONCEPT_CLASS_ID" : null
+									}
+								]
 							}
 						},
 						"StartWindow" : {
 							"Start" : {
+								"Days" : 183,
 								"Coeff" : -1
 							},
 							"End" : {
-								"Coeff" : 1
-							},
-							"UseIndexEnd" : false,
-							"UseEventEnd" : false
-						},
-						"RestrictVisit" : false,
-						"IgnoreObservationPeriod" : false,
-						"Occurrence" : {
-							"Type" : 2,
-							"Count" : 1,
-							"IsDistinct" : false
-						}
-					},
-					{
-						"Criteria" : {
-							"Measurement" : {
-								"CodesetId" : 3,
-								"MeasurementTypeExclude" : false,
-								"ValueAsNumber" : {
-									"Value" : 7,
-									"Op" : "eq"
-								}
-							}
-						},
-						"StartWindow" : {
-							"Start" : {
-								"Coeff" : -1
-							},
-							"End" : {
+								"Days" : 30,
 								"Coeff" : 1
 							},
 							"UseIndexEnd" : false,

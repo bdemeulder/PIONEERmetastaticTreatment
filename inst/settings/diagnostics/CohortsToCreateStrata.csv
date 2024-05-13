@@ -17,22 +17,22 @@ name,atlasName,atlasId,cohortId
 316,"[PIONEER 2.0] N1, M0Mx, any T FINAL",409,316
 317,[PIONEER 2.0] Metastasis recurrent RT-FINAL,305,317
 318,[PIONEER 2.0] Metastasis recurrent RP-FINAL,301,318
-319,[PIONEER 2.0] CT scan of whole body around Dx,285,319
-320,[PIONEER 2.0] CT scan of whole body around metastasis,317,320
-321,[PIONEER 2.0] PSA above 20 at Dx FINAL,398,321
-322,[PIONEER 2.0] PSA below 10 at Dx FINAL,410,322
-323,[PIONEER 2.0] PSA 10-20 at Dx FINAL,411,323
-324,[PIONEER 2.0] Gleason Grade 1 at Dx FINAL,326,324
-325,[PIONEER V2.0] Earliest Gleason Grade 2 - 3,329,325
-326,[PIONEER V2.0] Earliest Gleason Grade 4,330,326
-327,[PIONEER V2.0] Earliest Gleason Grade 5,331,327
-328,[PIONEER S1] High-Risk,52,328
-329,[PIONEER S2] Low-Risk,53,329
-330,[PIONEER S3] Intermediate-Risk,54,330
-331,[PIONEER 2.0] MRI of prostate FINAL,295,331
-332,[PIONEER 2.0] Bone scan FINAL,309,332
-333,[PIONEER 2.0] CT thorax_abdomen_pelvis OR full body MRI FINAL,316,333
-334,[PIONEER 2.0] PET-CT imaging FINAL,299,334
+319,[PIONEER 2.0] MRI of prostate FINAL,295,319
+320,[PIONEER 2.0] Bone scan FINAL,309,320
+321,[PIONEER 2.0] CT scan of whole body around Dx,285,321
+322,[PIONEER 2.0] CT scan of whole body around metastasis,317,322
+323,[PIONEER 2.0] PET-CT imaging FINAL,299,323
+324,[PIONEER 2.0] PSA above 20 at Dx FINAL,398,324
+325,[PIONEER 2.0] PSA below 10 at Dx FINAL,410,325
+326,[PIONEER 2.0] PSA 10-20 at Dx FINAL,411,326
+327,[PIONEER 2.0] Gleason Grade 1 at Dx FINAL,326,327
+328,[PIONEER V2.0] Earliest Gleason Grade 2 - 3,329,328
+329,[PIONEER V2.0] Earliest Gleason Grade 4,330,329
+330,[PIONEER V2.0] Earliest Gleason Grade 5,331,330
+331,[PIONEER S1] High-Risk,52,331
+332,[PIONEER S2] Low-Risk,53,332
+333,[PIONEER S3] Intermediate-Risk,54,333
+334,[PIONEER 2.0] CT thorax_abdomen_pelvis OR full body MRI FINAL,316,334
 335,[PIONEER 2.0] PSA above 20 at mets dx FINAL,414,335
 336,[PIONEER 2.0] PSA below 10 at mets dx FINAL,413,336
 337,[PIONEER 2.0] PSA 10-20 at mets dx FINAL,412,337

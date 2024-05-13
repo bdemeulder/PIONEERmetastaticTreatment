@@ -742,6 +742,10 @@ shinyServer(function(input, output, session) {
       sankeyData <- andrData$treatment_sankey %>%
         dplyr::filter(cohortId == target_id, databaseId == !!input$databasesTreatmentPatterns) %>%
         dplyr::collect()
+      
+      to_filter <- sankeyData %>% dplyr::group_by(sourceName) %>% dplyr::summarise(val = sum(value)) %>% dplyr::filter(val > 30)
+      
+      sankeyData <- sankeyData %>% dplyr::filter(sourceName %in% to_filter$sourceName)
       return(sankeyData)
     }
     return(data.frame())

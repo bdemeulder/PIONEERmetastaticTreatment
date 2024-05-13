@@ -29,25 +29,25 @@ WHERE E.concept_id is null
 ) C UNION ALL 
 SELECT 1 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (42872445)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (4302356,36713242,2792841,2792848,2792855,2788819,2211381,2211380,2211425,2793060,2211512,4061009,4058336,4058335,3027941,36305710,43055219,43055217,43055218,3035261,3029076,36305511,3049252,3013610,36303622,3019825,3018999)
 UNION  select c.concept_id
   from @vocabulary_database_schema.CONCEPT c
   join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  and ca.ancestor_concept_id in (42872445)
+  and ca.ancestor_concept_id in (4302356,36713242,2792841,2792848,2792855,2788819,2211381,2211380,2211425,2793060,2211512,4061009,4058336,4058335)
   and c.invalid_reason is null
 
 ) I
-LEFT JOIN
-(
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (35608074,36685489,44783489,2793605,2793370,2793371,2793368,37109092,37109091,44782531,44808386)
+) C UNION ALL 
+SELECT 2 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
+( 
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (4138476,37208979,36685430,36685431)
 UNION  select c.concept_id
   from @vocabulary_database_schema.CONCEPT c
   join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  and ca.ancestor_concept_id in (35608074,36685489,44783489,2793605,2793370,2793371,2793368,37109092,37109091,44782531,44808386)
+  and ca.ancestor_concept_id in (4138476,37208979,36685430,36685431)
   and c.invalid_reason is null
 
-) E ON I.concept_id = E.concept_id
-WHERE E.concept_id is null
+) I
 ) C
 ;
 
@@ -131,9 +131,33 @@ GROUP BY cc.person_id, cc.event_id
 HAVING COUNT(cc.event_id) >= 1
 -- End Correlated Criteria
 
+UNION ALL
+-- Begin Correlated Criteria
+select 1 as index_id, cc.person_id, cc.event_id
+from (SELECT p.person_id, p.event_id 
+FROM #qualified_events P
+JOIN (
+  -- Begin Procedure Occurrence Criteria
+select C.person_id, C.procedure_occurrence_id as event_id, C.procedure_date as start_date, DATEADD(d,1,C.procedure_date) as END_DATE,
+       C.visit_occurrence_id, C.procedure_date as sort_date
+from 
+(
+  select po.* 
+  FROM @cdm_database_schema.PROCEDURE_OCCURRENCE po
+JOIN #Codesets cs on (po.procedure_concept_id = cs.concept_id and cs.codeset_id = 2)
+) C
+
+
+-- End Procedure Occurrence Criteria
+
+) A on A.person_id = P.person_id  AND A.START_DATE >= P.OP_START_DATE AND A.START_DATE <= P.OP_END_DATE AND A.START_DATE >= DATEADD(day,-90,P.START_DATE) AND A.START_DATE <= DATEADD(day,90,P.START_DATE) ) cc 
+GROUP BY cc.person_id, cc.event_id
+HAVING COUNT(cc.event_id) >= 1
+-- End Correlated Criteria
+
   ) CQ on E.person_id = CQ.person_id and E.event_id = CQ.event_id
   GROUP BY E.person_id, E.event_id
-  HAVING COUNT(index_id) = 1
+  HAVING COUNT(index_id) >= 1
 ) G
 -- End Criteria Group
 ) AC on AC.person_id = pe.person_id AND AC.event_id = pe.event_id
@@ -169,7 +193,7 @@ WHERE Results.ordinal = 1
 -- date offset strategy
 
 select event_id, person_id, 
-  case when DATEADD(day,1,end_date) > op_end_date then op_end_date else DATEADD(day,1,end_date) end as end_date
+  case when DATEADD(day,1,start_date) > op_end_date then op_end_date else DATEADD(day,1,start_date) end as end_date
 INTO #strategy_ends
 from #included_events;
 

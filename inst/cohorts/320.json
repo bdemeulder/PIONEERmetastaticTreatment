@@ -4,7 +4,7 @@
 		"CriteriaList" : [
 			{
 				"ConditionOccurrence" : {
-					"CodesetId" : 0,
+					"CodesetId" : 1,
 					"ConditionTypeExclude" : false
 				}
 			}
@@ -20,21 +20,21 @@
 	"ConceptSets" : [
 		{
 			"id" : 0,
-			"name" : "[PIONEER 2.0] Secondary malignant neoplasm",
+			"name" : "Bone scan",
 			"expression" : {
 				"items" : [
 					{
 						"concept" : {
-							"CONCEPT_ID" : 432851,
-							"CONCEPT_NAME" : "Secondary malignant neoplastic disease",
+							"CONCEPT_ID" : 4217238,
+							"CONCEPT_NAME" : "Radioisotope scan of bone",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "128462008",
-							"DOMAIN_ID" : "Condition",
+							"CONCEPT_CODE" : "41747008",
+							"DOMAIN_ID" : "Procedure",
 							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
+							"CONCEPT_CLASS_ID" : "Procedure"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -42,36 +42,19 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 4205430,
-							"CONCEPT_NAME" : "M1 category",
+							"CONCEPT_ID" : 2106845,
+							"CONCEPT_NAME" : "Bone scan performed prior to initiation of treatment or at any time since diagnosis of prostate cancer (PRCA)",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "55440008",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
+							"CONCEPT_CODE" : "3269F",
+							"DOMAIN_ID" : "Observation",
+							"VOCABULARY_ID" : "CPT4",
+							"CONCEPT_CLASS_ID" : "CPT4"
 						},
 						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4201930,
-							"CONCEPT_NAME" : "Pain from metastases",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "315241008",
-							"DOMAIN_ID" : "Condition",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Clinical Finding"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
+						"includeDescendants" : false,
 						"includeMapped" : false
 					}
 				]
@@ -79,21 +62,21 @@
 		},
 		{
 			"id" : 1,
-			"name" : "CT of whole body",
+			"name" : "[PIONEER 2.0] prostate cancer",
 			"expression" : {
 				"items" : [
 					{
 						"concept" : {
-							"CONCEPT_ID" : 36713614,
-							"CONCEPT_NAME" : "CT of whole body with contrast",
+							"CONCEPT_ID" : 4163261,
+							"CONCEPT_NAME" : "Malignant tumor of prostate",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "718527007",
-							"DOMAIN_ID" : "Procedure",
+							"CONCEPT_CODE" : "399068003",
+							"DOMAIN_ID" : "Condition",
 							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Procedure"
+							"CONCEPT_CLASS_ID" : "Clinical Finding"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -101,152 +84,33 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 37109428,
-							"CONCEPT_NAME" : "PET CT of whole body",
+							"CONCEPT_ID" : 4314337,
+							"CONCEPT_NAME" : "Secondary malignant neoplasm of prostate",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "480621000119104",
-							"DOMAIN_ID" : "Procedure",
+							"CONCEPT_CODE" : "94503003",
+							"DOMAIN_ID" : "Condition",
 							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Procedure"
+							"CONCEPT_CLASS_ID" : "Clinical Finding"
 						},
-						"isExcluded" : false,
+						"isExcluded" : true,
 						"includeDescendants" : true,
 						"includeMapped" : false
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 37310734,
-							"CONCEPT_NAME" : "PET CT of whole body using 18F-FDOPA (fluorodopa 18-F)",
+							"CONCEPT_ID" : 37208188,
+							"CONCEPT_NAME" : "Non-metastatic prostate cancer",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "144811000000100",
-							"DOMAIN_ID" : "Procedure",
+							"CONCEPT_CODE" : "461511000124101",
+							"DOMAIN_ID" : "Condition",
 							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Procedure"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 35622651,
-							"CONCEPT_NAME" : "PET CT of whole body using 18F fluciclovine",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "764705009",
-							"DOMAIN_ID" : "Procedure",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Procedure"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 37310747,
-							"CONCEPT_NAME" : "PET CT of whole body using 18F PSMA (prostate specific membrane antigen)",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "144541000000102",
-							"DOMAIN_ID" : "Procedure",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Procedure"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 35622620,
-							"CONCEPT_NAME" : "PET CT of whole body using fluoromisonidazole (18-F)",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "764644009",
-							"DOMAIN_ID" : "Procedure",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Procedure"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 35622621,
-							"CONCEPT_NAME" : "PET CT of whole body using fluorothymidine (18-F)",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "764646006",
-							"DOMAIN_ID" : "Procedure",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Procedure"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 44808546,
-							"CONCEPT_NAME" : "SPECT CT of whole body",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "859221000000100",
-							"DOMAIN_ID" : "Procedure",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Procedure"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 44808544,
-							"CONCEPT_NAME" : "SPECT of whole body",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "859201000000109",
-							"DOMAIN_ID" : "Procedure",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Procedure"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 42535298,
-							"CONCEPT_NAME" : "SPECT of whole body for localization of neoplasm",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "16552301000119102",
-							"DOMAIN_ID" : "Procedure",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Procedure"
+							"CONCEPT_CLASS_ID" : "Clinical Finding"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -264,14 +128,14 @@
 	},
 	"InclusionRules" : [
 		{
-			"name" : "CT scan of whole body",
+			"name" : "Bone scan",
 			"expression" : {
 				"Type" : "ALL",
 				"CriteriaList" : [
 					{
 						"Criteria" : {
 							"ProcedureOccurrence" : {
-								"CodesetId" : 1,
+								"CodesetId" : 0,
 								"ProcedureTypeExclude" : false
 							}
 						},
@@ -301,6 +165,12 @@
 			}
 		}
 	],
+	"EndStrategy" : {
+		"DateOffset" : {
+			"DateField" : "StartDate",
+			"Offset" : 1
+		}
+	},
 	"CensoringCriteria" : [],
 	"CollapseSettings" : {
 		"CollapseType" : "ERA",

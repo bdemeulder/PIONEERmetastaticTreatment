@@ -5,15 +5,15 @@ name,atlasName,atlasId,cohortId
 104,[PIONEER 2.0] Target Cohort 2.0_mHSPC treated FINAL,360,104
 105,[PIONEER 2.0] Target Cohort 2.1_mHSPC treated (synchronous) FINAL,300,105
 106,[PIONEER 2.0] Target Cohort 2.2_metachronous mHSPC treated FINAL,306,106
-107,[PIONEER 2.0]  Target Cohort 2.0_mHSPC ADT only treated Nov2023,1066,107
-108,[PIONEER 2.0] Target Cohort 2.0_mHSPC ADT + ARTA treated Nov2023,1067,108
+107,[PIONEER 2.0] Target Cohort 2.0_mHSPC ADT only treated FINAL,436,107
+108,[PIONEER 2.0] Target Cohort 2.0_mHSPC ADT+ARTA treated FINAL,437,108
 109,[PIONEER 2.0] Target Cohort 2.0_mHSPC ADT+Chemo treated Nov 2023,1068,109
 110,[PIONEER 2.0] Target Cohort 2.0_mHSPC ADT+ARTA+Chemo treated Nov 2023,1069,110
-111,[PIONEER 2.0] Target Cohort 2.0_mHSPC ADT only treated synchronous Nov2023,1070,111
-112,[PIONEER 2.0] Target Cohort 2.0_mHSPC ADT + ARTA treated synchronous Nov2023,1072,112
+111,[PIONEER 2.0] Target Cohort 2.1_mHSPC ADT only treated (synchronous) FINAL,424,111
+112,[PIONEER 2.0] Target Cohort 2.1_mHSPC ADT+ARTA treated (synchronous) FINAL,429,112
 113,[PIONEER 2.0] Target Cohort 2.0_mHSPC ADT + Chemo treated synchronous Nov2023,1073,113
 114,[PIONEER 2.0] Target Cohort 2.0_mHSPC ADT + ARTA + Chemo treated synchronous Nov2023,1074,114
-115,[PIONEER 2.0] Target Cohort 2.0_mHSPC ADT only treated metachronous Nov2023,1071,115
-116,[PIONEER 2.0] Target Cohort 2.0_mHSPC ADT + ARTA treated metachronous Nov2023,1075,116
-117,[PIONEER 2.0] Target Cohort 2.0_mHSPC ADT + Chemo treated metachronous Nov2023,1076,117
+115,[PIONEER 2.0] Target Cohort 2.2_metachronous mHSPC ADT only treated FINAL,428,115
+116,[PIONEER 2.0] Target Cohort 2.0_mHSPC ADT + Chemo treated metachronous Nov2023,1076,116
+117,[PIONEER 2.0] Target Cohort 2.2_metachronous mHSPC ADT+ARTA treated FINAL,433,117
 118,[PIONEER 2.0] Target Cohort 2.0_mHSPC ADT + ARTA + Chemo treated metachronous Nov2023,1077,118

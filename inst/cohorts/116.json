@@ -5,13 +5,40 @@
 			{
 				"DrugExposure" : {
 					"CorrelatedCriteria" : {
-						"Type" : "ALL",
+						"Type" : "ANY",
 						"CriteriaList" : [
 							{
 								"Criteria" : {
 									"DrugExposure" : {
-										"CodesetId" : 12,
+										"CodesetId" : 13,
 										"DrugTypeExclude" : false
+									}
+								},
+								"StartWindow" : {
+									"Start" : {
+										"Days" : 0,
+										"Coeff" : -1
+									},
+									"End" : {
+										"Days" : 183,
+										"Coeff" : 1
+									},
+									"UseIndexEnd" : false,
+									"UseEventEnd" : false
+								},
+								"RestrictVisit" : false,
+								"IgnoreObservationPeriod" : false,
+								"Occurrence" : {
+									"Type" : 2,
+									"Count" : 1,
+									"IsDistinct" : false
+								}
+							},
+							{
+								"Criteria" : {
+									"ProcedureOccurrence" : {
+										"CodesetId" : 25,
+										"ProcedureTypeExclude" : false
 									}
 								},
 								"StartWindow" : {
@@ -51,13 +78,40 @@
 			{
 				"ProcedureOccurrence" : {
 					"CorrelatedCriteria" : {
-						"Type" : "ALL",
+						"Type" : "ANY",
 						"CriteriaList" : [
 							{
 								"Criteria" : {
 									"DrugExposure" : {
-										"CodesetId" : 12,
+										"CodesetId" : 13,
 										"DrugTypeExclude" : false
+									}
+								},
+								"StartWindow" : {
+									"Start" : {
+										"Days" : 0,
+										"Coeff" : -1
+									},
+									"End" : {
+										"Days" : 183,
+										"Coeff" : 1
+									},
+									"UseIndexEnd" : false,
+									"UseEventEnd" : false
+								},
+								"RestrictVisit" : false,
+								"IgnoreObservationPeriod" : false,
+								"Occurrence" : {
+									"Type" : 2,
+									"Count" : 1,
+									"IsDistinct" : false
+								}
+							},
+							{
+								"Criteria" : {
+									"ProcedureOccurrence" : {
+										"CodesetId" : 25,
+										"ProcedureTypeExclude" : false
 									}
 								},
 								"StartWindow" : {
@@ -157,7 +211,7 @@
 						"DemographicCriteriaList" : [],
 						"Groups" : []
 					},
-					"CodesetId" : 12,
+					"CodesetId" : 13,
 					"First" : true,
 					"OccurrenceStartDate" : {
 						"Value" : "2016-01-01",
@@ -165,6 +219,79 @@
 						"Extent" : "2020-12-31"
 					},
 					"DrugTypeExclude" : false
+				}
+			},
+			{
+				"ProcedureOccurrence" : {
+					"CorrelatedCriteria" : {
+						"Type" : "ALL",
+						"CriteriaList" : [
+							{
+								"Criteria" : {
+									"DrugExposure" : {
+										"CodesetId" : 11,
+										"DrugTypeExclude" : false
+									}
+								},
+								"StartWindow" : {
+									"Start" : {
+										"Days" : 0,
+										"Coeff" : -1
+									},
+									"End" : {
+										"Days" : 183,
+										"Coeff" : 1
+									},
+									"UseIndexEnd" : false,
+									"UseEventEnd" : false
+								},
+								"RestrictVisit" : false,
+								"IgnoreObservationPeriod" : false,
+								"Occurrence" : {
+									"Type" : 2,
+									"Count" : 1,
+									"IsDistinct" : false
+								}
+							},
+							{
+								"Criteria" : {
+									"ProcedureOccurrence" : {
+										"CodesetId" : 19,
+										"ProcedureTypeExclude" : false
+									}
+								},
+								"StartWindow" : {
+									"Start" : {
+										"Days" : 0,
+										"Coeff" : -1
+									},
+									"End" : {
+										"Days" : 183,
+										"Coeff" : 1
+									},
+									"UseIndexEnd" : false,
+									"UseEventEnd" : false
+								},
+								"RestrictVisit" : false,
+								"IgnoreObservationPeriod" : false,
+								"Occurrence" : {
+									"Type" : 2,
+									"Count" : 1,
+									"IsDistinct" : false
+								}
+							}
+						],
+						"DemographicCriteriaList" : [],
+						"Groups" : []
+					},
+					"CodesetId" : 25,
+					"First" : true,
+					"OccurrenceStartDate" : {
+						"Value" : "2016-01-01",
+						"Op" : "bt",
+						"Extent" : "2020-12-31"
+					},
+					"ProcedureTypeExclude" : false
 				}
 			}
 		],
@@ -15143,34 +15270,8 @@
 					{
 						"Criteria" : {
 							"DrugExposure" : {
-								"CodesetId" : 13,
+								"CodesetId" : 12,
 								"DrugTypeExclude" : false
-							}
-						},
-						"StartWindow" : {
-							"Start" : {
-								"Coeff" : -1
-							},
-							"End" : {
-								"Days" : 183,
-								"Coeff" : 1
-							},
-							"UseIndexEnd" : false,
-							"UseEventEnd" : false
-						},
-						"RestrictVisit" : false,
-						"IgnoreObservationPeriod" : true,
-						"Occurrence" : {
-							"Type" : 0,
-							"Count" : 0,
-							"IsDistinct" : false
-						}
-					},
-					{
-						"Criteria" : {
-							"ProcedureOccurrence" : {
-								"CodesetId" : 24,
-								"ProcedureTypeExclude" : false
 							}
 						},
 						"StartWindow" : {
@@ -16681,12 +16782,6 @@
 		},
 		{
 			"DrugExposure" : {
-				"CodesetId" : 13,
-				"DrugTypeExclude" : false
-			}
-		},
-		{
-			"DrugExposure" : {
 				"CodesetId" : 14,
 				"DrugTypeExclude" : false
 			}
@@ -16710,14 +16805,14 @@
 			}
 		},
 		{
-			"ProcedureOccurrence" : {
-				"CodesetId" : 22,
-				"ProcedureTypeExclude" : false
+			"DrugExposure" : {
+				"CodesetId" : 12,
+				"DrugTypeExclude" : false
 			}
 		},
 		{
 			"ProcedureOccurrence" : {
-				"CodesetId" : 25,
+				"CodesetId" : 22,
 				"ProcedureTypeExclude" : false
 			}
 		}

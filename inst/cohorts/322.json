@@ -4,8 +4,7 @@
 		"CriteriaList" : [
 			{
 				"ConditionOccurrence" : {
-					"CodesetId" : 17,
-					"First" : true,
+					"CodesetId" : 0,
 					"ConditionTypeExclude" : false
 				}
 			}
@@ -20,19 +19,19 @@
 	},
 	"ConceptSets" : [
 		{
-			"id" : 17,
-			"name" : "[PIONEER 2.0] prostate cancer",
+			"id" : 0,
+			"name" : "[PIONEER 2.0] Secondary malignant neoplasm",
 			"expression" : {
 				"items" : [
 					{
 						"concept" : {
-							"CONCEPT_ID" : 4163261,
-							"CONCEPT_NAME" : "Malignant tumor of prostate",
+							"CONCEPT_ID" : 432851,
+							"CONCEPT_NAME" : "Secondary malignant neoplastic disease",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "399068003",
+							"CONCEPT_CODE" : "128462008",
 							"DOMAIN_ID" : "Condition",
 							"VOCABULARY_ID" : "SNOMED",
 							"CONCEPT_CLASS_ID" : "Clinical Finding"
@@ -43,30 +42,30 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 4314337,
-							"CONCEPT_NAME" : "Secondary malignant neoplasm of prostate",
+							"CONCEPT_ID" : 4205430,
+							"CONCEPT_NAME" : "M1 category",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "94503003",
+							"CONCEPT_CODE" : "55440008",
 							"DOMAIN_ID" : "Condition",
 							"VOCABULARY_ID" : "SNOMED",
 							"CONCEPT_CLASS_ID" : "Clinical Finding"
 						},
-						"isExcluded" : true,
+						"isExcluded" : false,
 						"includeDescendants" : true,
 						"includeMapped" : false
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 37208188,
-							"CONCEPT_NAME" : "Non-metastatic prostate cancer",
+							"CONCEPT_ID" : 4201930,
+							"CONCEPT_NAME" : "Pain from metastases",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "461511000124101",
+							"CONCEPT_CODE" : "315241008",
 							"DOMAIN_ID" : "Condition",
 							"VOCABULARY_ID" : "SNOMED",
 							"CONCEPT_CLASS_ID" : "Clinical Finding"
@@ -79,122 +78,20 @@
 			}
 		},
 		{
-			"id" : 18,
-			"name" : "[PIONEER 2.0] PSA measurement",
+			"id" : 1,
+			"name" : "CT of whole body",
 			"expression" : {
 				"items" : [
 					{
 						"concept" : {
-							"CONCEPT_ID" : 35918474,
-							"CONCEPT_NAME" : "PSA (Prostatic Specific Antigen) Lab Value",
+							"CONCEPT_ID" : 36713614,
+							"CONCEPT_NAME" : "CT of whole body with contrast",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "3920",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "NAACCR",
-							"CONCEPT_CLASS_ID" : "NAACCR Variable"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 37398806,
-							"CONCEPT_NAME" : "PSA (prostate-specific antigen) level",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "1030791000000100",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Observable Entity"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 37065295,
-							"CONCEPT_NAME" : "Prostate specific Ag panel | Serum or Plasma | Chemistry Panels",
-							"STANDARD_CONCEPT" : "C",
-							"STANDARD_CONCEPT_CAPTION" : "Classification",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "LP387023-7",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "LOINC Hierarchy"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 2617206,
-							"CONCEPT_NAME" : "Prostate cancer screening; prostate specific antigen test (psa)",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "G0103",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "HCPCS",
-							"CONCEPT_CLASS_ID" : "HCPCS"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 35917936,
-							"CONCEPT_NAME" : "Prostatic Specific Antigen (PSA) Interpretation",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "prostate@2890",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "NAACCR",
-							"CONCEPT_CLASS_ID" : "NAACCR Variable"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 45889041,
-							"CONCEPT_NAME" : "Prostate specific antigen (PSA)",
-							"STANDARD_CONCEPT" : "C",
-							"STANDARD_CONCEPT_CAPTION" : "Classification",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "1011648",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "CPT4",
-							"CONCEPT_CLASS_ID" : "CPT4 Hierarchy"
-						},
-						"isExcluded" : false,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4272032,
-							"CONCEPT_NAME" : "Prostate specific antigen measurement",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "63476009",
-							"DOMAIN_ID" : "Measurement",
+							"CONCEPT_CODE" : "718527007",
+							"DOMAIN_ID" : "Procedure",
 							"VOCABULARY_ID" : "SNOMED",
 							"CONCEPT_CLASS_ID" : "Procedure"
 						},
@@ -204,16 +101,16 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 35917418,
-							"CONCEPT_NAME" : "Prostatic Specific Antigen (PSA) Lab Value",
+							"CONCEPT_ID" : 37109428,
+							"CONCEPT_NAME" : "PET CT of whole body",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "prostate@2880",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "NAACCR",
-							"CONCEPT_CLASS_ID" : "NAACCR Variable"
+							"CONCEPT_CODE" : "480621000119104",
+							"DOMAIN_ID" : "Procedure",
+							"VOCABULARY_ID" : "SNOMED",
+							"CONCEPT_CLASS_ID" : "Procedure"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -221,390 +118,16 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 3037774,
-							"CONCEPT_NAME" : "Prostate specific Ag [Units/volume] in Semen",
+							"CONCEPT_ID" : 37310734,
+							"CONCEPT_NAME" : "PET CT of whole body using 18F-FDOPA (fluorodopa 18-F)",
 							"STANDARD_CONCEPT" : "S",
 							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "19198-1",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "Lab Test"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 40762314,
-							"CONCEPT_NAME" : "Prostate specific Ag [Mass/volume] in Peritoneal fluid",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "59223-8",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "Lab Test"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 3038011,
-							"CONCEPT_NAME" : "Prostate specific Ag [Mass/volume] in Semen",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "19199-9",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "Lab Test"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 40762321,
-							"CONCEPT_NAME" : "Prostate specific Ag [Mass/volume] in Cerebral spinal fluid",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "59230-3",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "Lab Test"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 40762312,
-							"CONCEPT_NAME" : "Prostate specific Ag [Mass/volume] in Pleural fluid",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "59221-2",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "Lab Test"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 3032915,
-							"CONCEPT_NAME" : "Prostate specific Ag [Mass/volume] in Urine",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "34611-4",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "Lab Test"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 3002178,
-							"CONCEPT_NAME" : "Prostate specific Ag [Moles/volume] in Semen",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "19200-5",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "Lab Test"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 3007273,
-							"CONCEPT_NAME" : "Prostate specific Ag [Presence] in Tissue by Immune stain",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "10508-0",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "Lab Test"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 37394310,
-							"CONCEPT_NAME" : "Free PSA (prostate specific antigen) level",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "1030021000000101",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Observable Entity"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4194418,
-							"CONCEPT_NAME" : "Free prostate specific antigen level",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "395145001",
-							"DOMAIN_ID" : "Measurement",
+							"CONCEPT_CODE" : "144811000000100",
+							"DOMAIN_ID" : "Procedure",
 							"VOCABULARY_ID" : "SNOMED",
 							"CONCEPT_CLASS_ID" : "Procedure"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 37394311,
-							"CONCEPT_NAME" : "Free:total PSA (prostate specific antigen) ratio",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "1030031000000104",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Observable Entity"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 4215704,
-							"CONCEPT_NAME" : "Free:total prostate specific antigen ratio",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "395146000",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Procedure"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 3005013,
-							"CONCEPT_NAME" : "Prostate Specific Ag Free [Mass/volume] in Serum or Plasma",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "10886-0",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "Lab Test"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 3001784,
-							"CONCEPT_NAME" : "Prostate Specific Ag Free/Prostate specific Ag.total in Serum or Plasma",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "12841-3",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "Lab Test"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 2212543,
-							"CONCEPT_NAME" : "Prostate specific antigen (PSA); free",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "84154",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "CPT4",
-							"CONCEPT_CLASS_ID" : "CPT4"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 37392159,
-							"CONCEPT_NAME" : "Serum free PSA (prostate specific antigen) level",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "1000481000000100",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Observable Entity"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 44811981,
-							"CONCEPT_NAME" : "Serum free PSA (prostate specific antigen) measurement",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "909341000000103",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Procedure"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 37398474,
-							"CONCEPT_NAME" : "Serum free:total PSA (prostate specific antigen) ratio",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "1000491000000103",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Observable Entity"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 44811982,
-							"CONCEPT_NAME" : "Serum free:total prostate specific antigen ratio measurement",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "909361000000102",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "SNOMED",
-							"CONCEPT_CLASS_ID" : "Procedure"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 42529562,
-							"CONCEPT_NAME" : "Prostate Specific Ag Free [Mass/volume] in Serum or Plasma by Immunoassay",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "83113-1",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "Lab Test"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 3036349,
-							"CONCEPT_NAME" : "Prostate Specific Ag Free [Moles/volume] in Serum or Plasma",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "19203-9",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "Lab Test"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 3001138,
-							"CONCEPT_NAME" : "Prostate Specific Ag Free [Units/volume] in Serum or Plasma",
-							"STANDARD_CONCEPT" : "S",
-							"STANDARD_CONCEPT_CAPTION" : "Standard",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "19201-3",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "Lab Test"
-						},
-						"isExcluded" : true,
-						"includeDescendants" : true,
-						"includeMapped" : false
-					},
-					{
-						"concept" : {
-							"CONCEPT_ID" : 37047960,
-							"CONCEPT_NAME" : "Prostate specific Ag | Body fluid | Chemistry - non-challenge",
-							"STANDARD_CONCEPT" : "C",
-							"STANDARD_CONCEPT_CAPTION" : "Classification",
-							"INVALID_REASON" : "V",
-							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "LP386133-5",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "LOINC Hierarchy"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -612,16 +135,16 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 40653611,
-							"CONCEPT_NAME" : "Prostate specific Ag|MCnc|Pt|ANYBldSerPl",
-							"STANDARD_CONCEPT" : "C",
-							"STANDARD_CONCEPT_CAPTION" : "Classification",
+							"CONCEPT_ID" : 35622651,
+							"CONCEPT_NAME" : "PET CT of whole body using 18F fluciclovine",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "LG11034-2",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "LOINC Group"
+							"CONCEPT_CODE" : "764705009",
+							"DOMAIN_ID" : "Procedure",
+							"VOCABULARY_ID" : "SNOMED",
+							"CONCEPT_CLASS_ID" : "Procedure"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -629,16 +152,16 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 37067221,
-							"CONCEPT_NAME" : "Prostate specific Ag | Serum or Plasma | Chemistry - non-challenge",
-							"STANDARD_CONCEPT" : "C",
-							"STANDARD_CONCEPT_CAPTION" : "Classification",
+							"CONCEPT_ID" : 37310747,
+							"CONCEPT_NAME" : "PET CT of whole body using 18F PSMA (prostate specific membrane antigen)",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "LP386138-4",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "LOINC Hierarchy"
+							"CONCEPT_CODE" : "144541000000102",
+							"DOMAIN_ID" : "Procedure",
+							"VOCABULARY_ID" : "SNOMED",
+							"CONCEPT_CLASS_ID" : "Procedure"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -646,16 +169,84 @@
 					},
 					{
 						"concept" : {
-							"CONCEPT_ID" : 40655371,
-							"CONCEPT_NAME" : "Prostate specific Ag|Pt|Ser/Plas",
-							"STANDARD_CONCEPT" : "C",
-							"STANDARD_CONCEPT_CAPTION" : "Classification",
+							"CONCEPT_ID" : 35622620,
+							"CONCEPT_NAME" : "PET CT of whole body using fluoromisonidazole (18-F)",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
 							"INVALID_REASON" : "V",
 							"INVALID_REASON_CAPTION" : "Valid",
-							"CONCEPT_CODE" : "LG47752-7",
-							"DOMAIN_ID" : "Measurement",
-							"VOCABULARY_ID" : "LOINC",
-							"CONCEPT_CLASS_ID" : "LOINC Group"
+							"CONCEPT_CODE" : "764644009",
+							"DOMAIN_ID" : "Procedure",
+							"VOCABULARY_ID" : "SNOMED",
+							"CONCEPT_CLASS_ID" : "Procedure"
+						},
+						"isExcluded" : false,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 35622621,
+							"CONCEPT_NAME" : "PET CT of whole body using fluorothymidine (18-F)",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "764646006",
+							"DOMAIN_ID" : "Procedure",
+							"VOCABULARY_ID" : "SNOMED",
+							"CONCEPT_CLASS_ID" : "Procedure"
+						},
+						"isExcluded" : false,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 44808546,
+							"CONCEPT_NAME" : "SPECT CT of whole body",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "859221000000100",
+							"DOMAIN_ID" : "Procedure",
+							"VOCABULARY_ID" : "SNOMED",
+							"CONCEPT_CLASS_ID" : "Procedure"
+						},
+						"isExcluded" : false,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 44808544,
+							"CONCEPT_NAME" : "SPECT of whole body",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "859201000000109",
+							"DOMAIN_ID" : "Procedure",
+							"VOCABULARY_ID" : "SNOMED",
+							"CONCEPT_CLASS_ID" : "Procedure"
+						},
+						"isExcluded" : false,
+						"includeDescendants" : true,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 42535298,
+							"CONCEPT_NAME" : "SPECT of whole body for localization of neoplasm",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "16552301000119102",
+							"DOMAIN_ID" : "Procedure",
+							"VOCABULARY_ID" : "SNOMED",
+							"CONCEPT_CLASS_ID" : "Procedure"
 						},
 						"isExcluded" : false,
 						"includeDescendants" : true,
@@ -669,46 +260,28 @@
 		"Type" : "First"
 	},
 	"ExpressionLimit" : {
-		"Type" : "Last"
+		"Type" : "First"
 	},
 	"InclusionRules" : [
 		{
-			"name" : "PSA<10",
+			"name" : "CT scan of whole body",
 			"expression" : {
-				"Type" : "ANY",
+				"Type" : "ALL",
 				"CriteriaList" : [
 					{
 						"Criteria" : {
-							"Measurement" : {
-								"CodesetId" : 18,
-								"MeasurementTypeExclude" : false,
-								"ValueAsNumber" : {
-									"Value" : 10,
-									"Op" : "lt"
-								},
-								"Unit" : [
-									{
-										"CONCEPT_ID" : 8842,
-										"CONCEPT_NAME" : "nanogram per milliliter",
-										"STANDARD_CONCEPT" : null,
-										"STANDARD_CONCEPT_CAPTION" : "Unknown",
-										"INVALID_REASON" : null,
-										"INVALID_REASON_CAPTION" : "Unknown",
-										"CONCEPT_CODE" : "ng/mL",
-										"DOMAIN_ID" : "Unit",
-										"VOCABULARY_ID" : "UCUM",
-										"CONCEPT_CLASS_ID" : null
-									}
-								]
+							"ProcedureOccurrence" : {
+								"CodesetId" : 1,
+								"ProcedureTypeExclude" : false
 							}
 						},
 						"StartWindow" : {
 							"Start" : {
-								"Days" : 183,
+								"Days" : 90,
 								"Coeff" : -1
 							},
 							"End" : {
-								"Days" : 30,
+								"Days" : 90,
 								"Coeff" : 1
 							},
 							"UseIndexEnd" : false,
