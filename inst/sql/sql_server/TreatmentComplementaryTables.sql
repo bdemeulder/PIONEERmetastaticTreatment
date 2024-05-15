@@ -207,20 +207,22 @@ CREATE TABLE @cohort_database_schema.adt_proc(
 
 WITH tab AS(
   SELECT coh.cohort_definition_id, pr.person_id,
-         'ADT' as codeset_tag, pr.procedure_date as drug_exposure_start_date,
+         CAST('ADT' as text) AS codeset_tag, 
+         pr.procedure_date AS drug_exposure_start_date,
          coh.cohort_start_date,
          coh.cohort_end_date
   FROM @cdm_database_schema.PROCEDURE_OCCURRENCE pr
   JOIN @cohort_database_schema.@cohort_table coh
       ON pr.person_id = coh.subject_id
-  WHERE procedure_concept_id in (4012324, 4304921, 4073141, 4071936, 4073142, 4073143, 2103796, 2109975, 2109976,
-                                44512827, 4314682, 4286887, 4341536, 4145907))
+  WHERE procedure_concept_id IN (4012324, 4304921, 4073141, 4071936, 4073142, 4073143, 2103796,
+                                 2109975, 2109976, 44512827, 4314682, 4286887, 4341536, 4145907)
+                                 )
+INSERT INTO @cohort_database_schema.adt_proc
 SELECT DISTINCT * 
 FROM tab 
 WHERE cohort_definition_id IN (@treatment_cohort_ids)
   AND cohort_end_date >= drug_exposure_start_date
   AND cohort_start_date <= drug_exposure_start_date;
-
 
 INSERT INTO @cohort_database_schema.adt_proc 
 SELECT cohort_definition_id, person_id, codeset_tag, 
@@ -231,7 +233,13 @@ WHERE drug_exposure_start_date < dateadd(day, 184, cohort_start_date)
 
 INSERT INTO @cohort_database_schema.treatment_tagged
 SELECT * 
-FROM @cohort_database_schema.adt_proc;
+FROM @cohort_database_schema.adt_proc a
+WHERE NOT EXISTS (SELECT 1 
+                  FROM @cohort_database_schema.treatment_tagged t
+                  WHERE t.cohort_definition_id = a.cohort_definition_id
+                    AND t.person_id = a.person_id
+                    AND t.codeset_tag = a.codeset_tag
+                    AND t.drug_exposure_start_date = a.drug_exposure_start_date);
 
 DROP TABLE IF EXISTS @cohort_database_schema.adt_proc;
 
