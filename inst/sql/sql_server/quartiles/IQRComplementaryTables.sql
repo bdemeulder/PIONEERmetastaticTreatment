@@ -742,7 +742,8 @@ FROM (
             WHERE ca.ancestor_concept_id IN (3006575)
             )
       AND value_as_concept_id in (45878386, 45881618, 45882500, 45876322)
-	);
+	)
+	DISTKEY(diag_category_id);
 		
 		
 -- Update weights to avoid double counts of mild/severe course of the disease
